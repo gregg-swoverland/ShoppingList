@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E349F87F-9ADA-4C30-9082-54ABCA44E44E}</ProjectGuid>
+    <ProjectGuid>{41A32472-EE08-47EE-A613-18B13C65CCD2}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyShoppingList.DataModels</RootNamespace>
-    <AssemblyName>MyShoppingList.DataModels</AssemblyName>
+    <RootNamespace>MyShoppingList.ViewModels</RootNamespace>
+    <AssemblyName>MyShoppingList.ViewModels</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -97,8 +97,13 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddListViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyShoppingList.DataModels\MyShoppingList.DataModels.csproj">
+      <Project>{e349f87f-9ada-4c30-9082-54abca44e44e}</Project>
+      <Name>MyShoppingList.DataModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -113,9 +118,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62030</DevelopmentServerPort>
+          <DevelopmentServerPort>63298</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62030/</IISUrl>
+          <IISUrl>http://localhost:63298/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

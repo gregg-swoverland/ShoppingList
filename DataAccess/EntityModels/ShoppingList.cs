@@ -15,8 +15,10 @@ namespace MyShoppingList.DataModels
         [Column("UserId")]
         public int UserId { get; set; }
 
+        [Required]
         public String Name { get; set; }
 
+        [Required]
         public String Color { get; set; }
 
         public DateTimeOffset CreatedUtc { get; set; }

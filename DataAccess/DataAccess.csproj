@@ -117,10 +117,16 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IdentityModels.cs" />
+    <Compile Include="EntityModels\ShoppingList.cs" />
+    <Compile Include="EntityModels\ShoppingListItem.cs" />
+    <Compile Include="EntityModels\IdentityModels.cs" />
     <Compile Include="Migrations\201605261536300_Init.cs" />
     <Compile Include="Migrations\201605261536300_Init.Designer.cs">
       <DependentUpon>201605261536300_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606011514597_Adding_annotations.cs" />
+    <Compile Include="Migrations\201606011514597_Adding_annotations.Designer.cs">
+      <DependentUpon>201606011514597_Adding_annotations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -134,6 +140,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201605261536300_Init.resx">
       <DependentUpon>201605261536300_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606011514597_Adding_annotations.resx">
+      <DependentUpon>201606011514597_Adding_annotations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

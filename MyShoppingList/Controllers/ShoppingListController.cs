@@ -21,5 +21,11 @@ namespace MyShoppingList.Controllers
             var lists = db.ShoppingLists.ToList();
             return View(lists);
         }
+
+        public ActionResult AddList()
+        {
+
+            return View();
+        }
     }
 }

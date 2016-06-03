@@ -1,14 +1,15 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
-using MyShoppingList.DataModels;
+using MyShoppingList.ViewModels;
 using MyShoppingList.DataAccess;
+using MyShoppingList.Services;
 
 namespace MyShoppingList.Controllers
 {
     public class ShoppingListController : Controller
     {
-        ApplicationDbContext db = new ApplicationDbContext();
+        MyShoppingListService _service = new MyShoppingListService();
 
         // GET: ShoppingList
         public ActionResult Index()
@@ -18,14 +19,19 @@ namespace MyShoppingList.Controllers
 
         public ActionResult MyLists()
         {
-            var lists = db.ShoppingLists.ToList();
+            var lists = _service.GetShoppingLists();
             return View(lists);
         }
 
+        // GET: AddList
+        [HttpGet]
         public ActionResult AddList()
         {
+            var vm = new AddListViewModel();
 
-            return View();
+            return View(vm);
         }
+
+
     }
 }

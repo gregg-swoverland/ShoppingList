@@ -292,13 +292,17 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+    <ProjectReference Include="..\DataAccess\MyShoppingList.DataAccess.csproj">
       <Project>{e391009b-6c46-42dc-a7d1-af2e2784e886}</Project>
-      <Name>DataAccess</Name>
+      <Name>MyShoppingList.DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MyShoppingList.DataModels\MyShoppingList.DataModels.csproj">
+    <ProjectReference Include="..\MyShoppingList.DataModels\MyShoppingList.ViewModels.csproj">
       <Project>{e349f87f-9ada-4c30-9082-54abca44e44e}</Project>
-      <Name>MyShoppingList.DataModels</Name>
+      <Name>MyShoppingList.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShoppingList.Services\MyShoppingList.Services.csproj">
+      <Project>{3dab299b-227c-47ac-9940-d9c7642fdc34}</Project>
+      <Name>MyShoppingList.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

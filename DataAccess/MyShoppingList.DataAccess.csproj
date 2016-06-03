@@ -132,9 +132,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyShoppingList.DataModels\MyShoppingList.DataModels.csproj">
+    <ProjectReference Include="..\MyShoppingList.DataModels\MyShoppingList.ViewModels.csproj">
       <Project>{e349f87f-9ada-4c30-9082-54abca44e44e}</Project>
-      <Name>MyShoppingList.DataModels</Name>
+      <Name>MyShoppingList.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
